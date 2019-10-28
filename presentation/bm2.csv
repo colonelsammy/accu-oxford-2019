@@ -1,0 +1,13 @@
+Benchmark,
+BM_baseline_eval_plus,2.64
+BM_exception_eval_plus,7220
+BM_single_dispatch_eval_plus,17.3
+BM_double_dispatch_eval_plus,21.9
+BM_baseline_eval_minus,3.12
+BM_exception_eval_minus,12644
+BM_single_dispatch_eval_minus,26.8
+BM_double_dispatch_eval_minus,49.4
+BM_baseline_print,2730
+BM_exception_print,15794
+BM_single_dispatch_print,2770
+BM_double_dispatch_print,2783

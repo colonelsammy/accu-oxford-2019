@@ -1,0 +1,12 @@
+A story about overloads (solving the Expression Problem/multimethods in C++?)
+
+Can we implement the Expression Problem and multimethods in C++, trivially? **
+
+Wadler's expression problem has been around since before 1998 (see http://homepages.inf.ed.ac.uk/wadler/papers/expression/expression.txt) and shows the difficulty in adding both new types and new operations in an object oriented language. In C++ it is often 'worked around' by invoking the vistor pattern but "visitors [are] unsuitable to express application
+logic directly, surprisingly hard to teach students, and often slower than handcrafted workaround techniques" (https://parasol.tamu.edu/~yuriys/papers/TS12.pdf).
+
+Multimethods (also known as Multiple Dispatch) can be implemented in C++ in many ways, from the sample code in "More Effective C++" (item 31) through Andrei Alexandrescu's typelist based implementation in "Modern C++ Design" to the Open Methods proposal in N2216 and the Yomm2 library.
+
+This talk will revisit the Expression Problem, using inspiration from how it can be 'trivially' fixed in other languages (Scala/Java). If we squint at multimethods in just the right way, we can consider this to be an extension of the Expression Problem but with more than one argument, so we'll then go on to look at how the techniques applied to the Expression Problem might be applied to multimethods (and why they don't work!). Then we'll show that it is possible to implement multimethods a different way and consider the advantages and limitations this involves.
+
+** spoiler alert: we can, but with some caveats

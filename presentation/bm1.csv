@@ -1,0 +1,16 @@
+Benchmark,                        Time
+BM_baseline_eval_plus,         2.63
+BM_exception_eval_plus,        7188
+BM_virtualfn_eval_plus,        5.96
+BM_visit_eval_plus,             286
+BM_eval_plus,                  17.2
+BM_baseline_eval_minus,        3.20
+BM_exception_eval_minus,      12645
+BM_virtualfn_eval_minus,       8.93
+BM_visit_eval_minus,            978
+BM_eval_minus,                 29.6
+BM_baseline_print,             2082
+BM_exception_print,           15068
+BM_virtualfn_print,            2090
+BM_visit_print,                3099
+BM_print,                      2109

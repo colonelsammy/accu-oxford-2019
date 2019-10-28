@@ -1,0 +1,24 @@
+sudo apt-get install build-essential
+
+curl -O https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+cat >> ~/.condarc << 'EOF'
+always_yes: true
+channels:
+  - defaults
+  - conda-forge
+EOF
+
+conda info
+conda update -n base conda
+python -m pip install --upgrade pip
+conda create -n cling
+source activate cling
+conda install jupyter
+conda install xeus-cling
+conda install rise
+conda install jupyter_nbextensions_configurator
+
+jupyter-notebook
+
+jupyter nbconvert --to slides mexceptions.ipynb --post serve

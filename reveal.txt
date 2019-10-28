@@ -1,0 +1,7 @@
+sudo apt install nodejs
+sudo apt install npm
+#cd /mnt/c/Projects/git/sml/doc/cppcon-2018/reveal.js
+cd /mnt/c/Projects/git/accu-demo/presentation/reveal.js
+npm install
+nodejs -v
+npm start
